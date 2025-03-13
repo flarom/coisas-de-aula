@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+    <channel>
+        <title>Flarom's gallery</title>
+        <link>https://flarom.neocities.org/gallery</link>
+        <description>I create vibrant art featuring my OCs, my friends' OCs, and Vocaloids!</description>
+        <language>pt-br</language>
+
+        <item>
+            <title>Explorando Cores Vibrantes na Arte Digital</title>
+            <link>https://flarom.neocities.org/gallery#explorando-cores</link>
+            <description>
+                <![CDATA[
+                    <p>Cores vibrantes podem transformar um desenho! Misturar tons quentes e frios cria contrastes dinâmicos, enquanto a saturação dá mais vida às cenas. Testar paletas limitadas também ajuda a fortalecer sua identidade visual!</p>
+                ]]>
+            </description>
+            <pubDate>Fri, 07 Mar 2025 22:26:37 +0000</pubDate>
+        </item>
+
+        <item>
+            <title>Como Dar Mais Expressividade aos Seus Personagens</title>
+            <link>https://flarom.neocities.org/gallery#expressividade</link>
+            <description>
+                <![CDATA[
+                    <p>A pose e a expressão facial são essenciais para transmitir emoções! Experimente exagerar gestos e brincar com ângulos de câmera. Estudos rápidos de expressões e gestuais ajudam a criar personagens mais vivos e cativantes.</p>
+                ]]>
+            </description>
+            <pubDate>Fri, 07 Mar 2025 22:26:37 +0000</pubDate>
+        </item>
+
+        <item>
+            <title>O Poder das Silhuetas na Composição</title>
+            <link>https://flarom.neocities.org/gallery#silhuetas</link>
+            <description>
+                <![CDATA[
+                    <p>Uma silhueta clara torna o design de um personagem ou cena muito mais impactante. Teste simplificar seus desenhos para ver se a forma ainda é reconhecível. Isso melhora a legibilidade da arte e destaca os elementos principais.</p>
+                ]]>
+            </description>
+            <pubDate>Fri, 07 Mar 2025 22:26:37 +0000</pubDate>
+        </item>
+    </channel>
+</rss>

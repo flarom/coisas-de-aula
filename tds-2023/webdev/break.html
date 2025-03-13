@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Break</title>
+    <style>
+        body {
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Break</h1>
+    <h2>Unidades Absolutas</h2>
+    <p style="width: 300px;">
+        Esse parágrafo usa uma largura de 300px.
+        Px é relativo aos pixels na tela.
+    </p>
+    <p style="width: 5cm;">
+        Esse parágrafo usa uma largura de 5cm.
+        Cm é uma aproximação de centímetros.
+        Cm tende a não ser muito preciso, esse parágrafo realmente mede 4cm em uma tela 1080p.
+    </p>
+    <h2>Unidades Relativas</h2>
+    <p style="width: 50%;">
+        Esse parágrafo mede 50% da largura de seu container, no caso, a página.
+    </p>
+    <div style="width: 500px;">
+        <p style="width: 50%;">
+            Esse parágrafo também mede 50% da largura de seu container, mas está preso em um container de 500px.
+        </p>
+    </div>
+    <p style="width: 20vw; background-color: lightblue;">
+        Este parágrafo usa 20% da largura da janela de visualização (20vw), o que o torna responsivo ao tamanho da tela.
+    </p>
+    
+    <p style="font-size: 2em; background-color: lightcoral;">
+        Este parágrafo tem uma fonte 2 vezes maior que a base do tamanho da fonte (1em = 16px), então o texto está em 32px.
+    </p>
+    
+    <p style="font-size: 1.5rem; background-color: lightgreen;">
+        Este parágrafo tem uma fonte de 1.5 vezes o tamanho da fonte base, ou seja, 1.5 * 16px = 24px.
+    </p>
+
+    <p style="height: 10vh; background-color: lightgoldenrodyellow;">
+        Este parágrafo tem uma altura de 10% da altura da janela de visualização (10vh), ou seja, ele ocupa uma parte da altura da tela.
+    </p>
+
+    <p style="font-size: 5em; margin-left: 3em;">
+        Este parágrafo tem uma fonte 5 vezes maior que a base, ou seja, 5 * 16px = 80px.
+        Ele também tem uma margem à esquerda de 3em, o que o desloca para a direita.
+    </p>
+</body>
+</html>

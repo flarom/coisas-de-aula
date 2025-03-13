@@ -1,0 +1,41 @@
+1)
+	flarom.neocities.org
+		O site se adapta bem a telas menores? 
+			Sim, o site se adapta para telas menores.
+		O menu é fácil de acessar? 
+			Não há menus
+		O conteúdo é legível sem zoom? 
+			Sim
+		Há elementos cortados ou mal posicionados? 
+			Não
+
+	monari14.github.io/concatenação
+		O site se adapta bem a telas menores? 
+			Não.
+		O menu é fácil de acessar? 
+			Não há menus
+		O conteúdo é legível sem zoom?
+			Sim, mas as linhas são curtas e não adequadas 
+		Há elementos cortados ou mal posicionados? 
+			Há elementos com tamanhos inadequados, mas nunca cortados e mal posicionados.
+
+	wikipeida.org
+		O site se adapta bem a telas menores? 
+			O site não se adapta, mas a m.wikipedia.org, a pagina mobile, sim se adapta
+		O menu é fácil de acessar? 
+			Sim
+		O conteúdo é legível sem zoom? 
+			Não, mas na m.wikipedia.org sim
+		Há elementos cortados ou mal posicionados? 
+			Não
+
+2)
+	feito
+
+3 – PESQUISA)
+	O que é o Google Mobile-Friendly Test? 
+		O Google Mobile-Friendly Test verifica se um site é otimizado para dispositivos móveis, ajudando a melhorar seu desempenho
+		nos resultados de busca.
+	Como o Google Lighthouse avalia um site mobile? 
+		O Google Lighthouse avalia um site mobile em aspectos como performance, acessibilidade, melhores práticas, SEO e experiência
+		do usuário, gerando um relatório com pontuações e sugestões para otimizar o site.

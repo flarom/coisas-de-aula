@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transição</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined');
+
+        .large-icon,
+        .icon {
+            font-family: "Material Symbols Outlined";
+            margin-right: 3px;
+        }
+
+        .large-icon {
+            font-size: x-large;
+        }
+
+        button {
+            background-color: #007bff;
+            cursor: pointer;
+            color: white;
+            padding: 8px 16px;
+            border: 2px solid #007bff;
+            border-radius: 10px;
+            transition: all 0.3s;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+            transform: scale(1.1);
+        }
+
+        button:active {
+            transform: scale(0.5);
+        }
+
+        .slide-in {
+            opacity: 0;
+            animation: slide-in 1s forwards;
+        }
+
+        @keyframes slide-in {
+            0% {
+                opacity: 0;
+                transform: translateX(75vw);
+            }
+
+            100% {
+                opacity: 100;
+                transform: translateX(0vw);
+            }
+        }
+
+        /* botões q o hercio mandou fazer */
+        .inflavel {
+            transition: transform 1s;
+            z-index: 9999;
+        }
+
+        .inflavel:focus,
+        .inflavel:active {
+            transform: scale(10);
+        }
+
+        .corinvert:hover {
+            background-color: white;
+            color: #007bff;
+        }
+
+        .container {
+            background-color: #f0f0f0;
+            border: 1px gray solid;
+            margin-top: 10px;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="slide-in">Ola</h1>
+    <button id="botao">Meu botão</button>
+
+    <h2>botoes q o hercio mandou fazer</h2>
+    <button class="inflavel">inflavel</button>
+    <button class="corinvert">cores</button>
+
+    <div class="container slide-in">
+        <p>Div q desliza pela tela</p>
+        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia1.tenor.com%2Fimages%2Fd026898ed98827420e970e3e9ea7f103%2Ftenor.gif%3Fitemid%3D14632422&f=1&nofb=1&ipt=8fa907f2ac5e71cf912738cfe7d64d408272682e33c6c3cc23d7860ad48200e2&ipo=images"
+            alt="">
+    </div>
+
+    <button onclick="showMenu('menu1')">
+        <span class="large-icon">menu</span>
+    </button>
+    <div class="menu" id="menu1" style="display: none;">
+        <ul>
+            <li>
+                <a href="">link 1</a>
+            </li>
+            <li>
+                <a href="">link2</a>
+            </li>
+        </ul>
+    </div>
+    
+    <script>
+        function showMenu(id) {
+            const menu = document.getElementById(id);
+            if (menu.style.display === 'none' || menu.style.display === '') {
+                menu.style.display = 'block';
+            } else {
+                menu.style.display = 'none';
+            }
+        }
+    </script>
+    
+</body>
+
+</html>

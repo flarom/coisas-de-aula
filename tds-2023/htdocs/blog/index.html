@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>meu blogue</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="headerstyle.css">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">
+            <img src="https://picsum.photos/100/75?grayscale" alt="logo" height="75">
+        </a>
+
+        <div class="header-right">
+            <a href="index.html">Home</a>
+            <a href="posts.html">Posts</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="contato.html">Contato</a>
+            <a href="rss.xml">RSS</a>
+            <a id="theme-toggle" style="cursor: pointer;"><span class="large-icon">dark_mode</span></a>
+        </div>
+    </header>
+
+    <div class="document-group">
+        <div class="document fill">
+            <h1>Seja bem-viado <span class="icon">g_mobiledata</span> <span class="icon">skull</span></h1>
+            <p>Uma pagina de blog de testes sem rumo nem objetivo.</p>
+            
+            <a class="dinamic" href="posts.html">Ver publicações</a>
+        </div>
+        <div class="tiny-document hollow">
+            <img src="https://flarom.neocities.org/resources/drawings/111.png">
+        </div>
+    </div>
+
+    <div class="document"><h2>Blog</h2></div>
+    <div class="document-group" id="rss-feed"></div>
+    <div class="document"><a class="dinamic" href="posts.html">Ver mais posts</a></div>
+
+    <div class="document fill">
+        <h1>Sobre mim</h1>
+        <p>Sou um estudante de programação e arte.</p>
+        <p>Amo flat design</p>
+        <ul>
+            <li><a class="dinamic" target="_blank" href="https://github.com/flarom"><span class="large-icon">code</span>GitHub</a></li>
+            <li><a class="dinamic" target="_blank" href="https://flarom.neocities.org"><span class="large-icon">palette</span> Galeria de arte</a></li>
+        </ul>
+    </div>
+
+    <script src="rssrecent.js"></script>
+    <script src="themeswitch.js"></script>
+</body>
+</html>

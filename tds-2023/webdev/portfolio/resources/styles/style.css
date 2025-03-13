@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined');
+
+body {
+    background-color: #242424;
+    color: #aaaaaa;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #ffffff;
+    font-weight: 100;
+}
+
+a {
+    color: #70edff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+a.dinamic {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+    background: linear-gradient(90deg, #0098b333 0%, #0098b333 50%, #00000000 50%, #00000000 100%);
+    background-size: 200% 100%;
+    background-position: 100% 0;
+    transition: 500ms padding, 200ms background-position;
+}
+
+a.dinamic:hover {
+    background-position: 0 0;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+a.dinamic[target="_blank"]::after {
+    content: "arrow_outward";
+    font-family: "Material Symbols Outlined";
+}
+
+
+img {
+    border-radius: 10px;
+    max-width: 100%;
+}
+
+.tiny-document,
+.document {
+    border-radius: 15px;
+    padding: 10px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    z-index: 2;
+    margin-bottom: 10px;
+}
+
+.tiny-document {
+    max-width: 300px;
+}
+
+.fill {
+    background-color: #393939;
+    border-top: #727272 1px solid;
+}
+
+.hollow {
+    border: #727272 1px solid;
+}
+
+.document-group{
+    display: flex;
+    gap: 10px;
+
+    max-width: 1223px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0px;
+}
+
+.row-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer,
+.header {
+    overflow: hidden;
+    background-color: #393939;
+    border-radius: 15px;
+    border-top: #727272 1px solid;
+}
+
+.header a {
+    transition: 0.25s color;
+    float: left;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 12px;
+    border-radius: 4px;
+    padding-left: 18px;
+}
+
+.header a.logo {
+    font-size: 25px;
+    font-weight: 500;
+    font-weight: bold;
+}
+
+.header-right a {
+    transition: 0.2s all;
+    border-radius: 10px;
+    padding: 12px;
+    padding-left: 18px;
+    padding-right: 18px;
+    position: relative;
+    margin-left: 3px;
+}
+
+.header-right a:hover {
+    background-color: #727272;
+}
+
+.header-right a:active {
+    background-color: #727272;
+}
+
+.header-right {
+    float: right;
+    
+    padding: 20px 10px;
+}
+
+@media screen and (max-width: 700px) {
+    .header a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .header a.logo {
+        float:none;
+        text-align: center;
+        margin-top:10px;
+    }
+
+    .header-right {
+        float: none;
+    }
+    
+    .header-right a {
+        margin-bottom: 9px;
+    }
+
+    .document-group{
+        display: initial;
+        gap: 10px;
+    
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .tiny-document {
+        max-width: 1200px;
+    }
+}
+
+textarea,
+input[type=text],
+input[type=email],
+input[type=password] {
+    border-radius: 5px;
+    width: 90%;
+    background-color: #242424;
+    padding: 5px;
+    margin-bottom: 5px;
+    border: #727272 1px solid;
+    color: #ffffff;
+    outline:none;
+    transition: 0.2s all;
+}
+
+textarea:focus,
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=password]:focus {
+    border: #70edff 1px solid;
+    background-color: #0098b333;
+    margin-bottom: 20px;
+}
+
+input[type=submit] {
+    cursor:pointer;
+    background-color: #70edff;
+    border: #70edff 1px solid;
+    border-radius: 10px;
+    padding: 12px;
+    padding-left: 18px;
+    padding-right: 18px;
+    font-size: 16px;
+    transition: 0.2s all;
+    outline:none;
+}
+
+input[type=submit]:focus,
+input[type=submit]:hover {
+    border: #70edff 1px solid;
+    background-color: #0098b333;
+    color: #ffffff;
+}

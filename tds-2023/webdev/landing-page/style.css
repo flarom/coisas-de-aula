@@ -1,0 +1,159 @@
+:root {
+    --bg-color: #242424;
+    --text-color: #aaaaaa;
+    --title-color: #ffffff;
+    --link-color: #70edff;
+    --link-color-hover: #16e0ff;
+    --button-text: #242424;;
+    --doc-bg: #393939;
+    --doc-border: #727272;
+}
+
+.light-theme {
+    --bg-color: #ffffff;
+    --text-color: #333333;
+    --title-color: #000000;
+    --link-color: #007acc;
+    --button-text: #ffffff;
+    --doc-bg: #f0f0f0;
+    --doc-border: #cccccc;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined');
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--title-color);
+    font-weight: 100;
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+a.dinamic {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+    background: linear-gradient(90deg, #0098b333 0%, #0098b333 50%, #00000000 50%, #00000000 100%);
+    background-size: 200% 100%;
+    background-position: 100% 0;
+    transition: 500ms padding, 200ms background-position;
+}
+
+a.dinamic:hover {
+    background-position: 0 0;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+a.dinamic[target="_blank"]::after {
+    content: "arrow_outward";
+    font-family: "Material Symbols Outlined";
+}
+
+
+img {
+    border-radius: 10px;
+    max-width: 100%;
+}
+
+.tiny-document,
+.document {
+    border-radius: 15px;
+    padding: 10px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    z-index: 2;
+    margin-bottom: 10px;
+}
+
+.tiny-document {
+    max-width: 300px;
+}
+
+.fill {
+    background-color: var(--doc-bg);
+    border-top: var(--doc-border) 1px solid;
+}
+
+.hollow {
+    border: var(--doc-border) 1px solid;
+}
+
+.document-group{
+    display: flex;
+    gap: 10px;
+
+    max-width: 1223px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0px;
+}
+
+.row-container {
+    display: flex;
+    gap: 16px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button {
+    background-color: var(--link-color);
+    color: var(--button-text);
+    border: none;
+    border-radius: 7px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: var(--link-color-hover);
+    transform: scale(1.1);
+}
+
+button.awesome {
+    transition: box-shadow 1s, background-color 0.3s, transform 0.3s;;
+}
+button.awesome:hover {
+    box-shadow: var(--link-color) 0px 0px 20px;
+}
+
+@media screen and (max-width: 700px) {
+    .document-group{
+        display: initial;
+        gap: 10px;
+    
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .tiny-document {
+        max-width: 1200px;
+    }
+
+    .row-container {
+        flex-wrap: wrap;
+    }
+}
+
+.large-icon,
+.icon {
+    font-family: "Material Symbols Outlined";
+    margin-right: 3px;
+}
+
+.large-icon{
+    font-size: x-large;
+}

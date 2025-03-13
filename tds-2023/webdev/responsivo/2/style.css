@@ -1,0 +1,20 @@
+h1 {
+    font-size: 2rem;
+    /* Ajusta conforme a fonte do HTML */
+}
+
+p {
+    width: 80%;
+    /* Ocupa 80% da largura do container */
+}
+
+.container {
+    width: 50vw;
+    /* Ocupa 50% da largura da tela */
+    height: 30vh;
+    /* 30% da altura da tela */
+}
+
+div{
+    background-color: #00000022;
+} 

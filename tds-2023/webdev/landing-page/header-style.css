@@ -1,0 +1,79 @@
+.header {
+    overflow: hidden;
+    background-color: rgba(57, 57, 57, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 20px 10px;
+    border-radius: 10px;
+    border-top: 1px #666666 solid;
+    
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    
+    margin-bottom: 20px;
+}
+
+.header a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 10px;
+}
+
+.header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.header a:hover {
+    background-color: #666666;
+}
+
+.header-right {
+    float: right;
+}
+
+button.header-menu-button {
+    display: none;
+    background-color: transparent;
+    color: #f1f1f1;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    position: absolute;
+    top: 20px;
+    right: 10px;
+}
+
+@media screen and (max-width: 700px) {
+
+    /* Botão aparece no mobile */
+    button.header-menu-button {
+        display: block;
+    }
+
+    /* Esconde o menu inicialmente */
+    .header-right {
+        display: none;
+        float: none;
+        width: 100%;
+        background-color: #393939;
+        text-align: left;
+        flex-direction: column;
+    }
+
+    /* Quando a classe active está no menu, ele aparece */
+    .header-right.active {
+        display: flex;
+    }
+
+    .header a {
+        display: block;
+    }
+}

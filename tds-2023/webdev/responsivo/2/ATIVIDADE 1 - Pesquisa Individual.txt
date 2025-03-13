@@ -1,0 +1,24 @@
+ATIVIDADE 1 - Pesquisa Individual
+1) O que o Google considera um site mobile-friendly?
+O Google considera mobile-friendly sites que possuem Designs Responsivos, no qual o conteúdo se adapta para diferentes resoluções, no qual o texto da pagina é sempre legível. A navegação do site deve ser simples, idealmente o site não possui popups, e o conteúdo preferencialmente carrega rápido em redes móveis. 
+
+2) O que acontece quando a meta viewport não é usada corretamente?
+O uso incorreto da meta viewport pode interferir negativamente na exibição da pagina como um todo, o site pode não se ajustar corretamente a tela, o conteúdo pode aparecer com uma escala desconfortável de interagir.
+
+ATIVIDADE 2
+Testando com meu site, https://flarom.neocities.org, obtive um resultado de 91% para SEO. Problemas notáveis são as trocas constantes de layout e o uso inadequado de imagens em alta resolução consumindo muita banda.
+
+LCP (Largest Contentful Paint)
+Mede o tempo que o maior elemento visível na tela leva para carregar.
+Um longo tempo de carregamento pode fazer com que o usuário saia do site antes de interagir
+
+FID (First Input Delay)
+Mede o tempo entre a primeira interação do usuário e a resposta do site.
+O usuário pode se sentir frustrado com tempos longos de resposta.
+
+CLS (Cumulative Layout Shift)
+Mede deslocamentos inesperados de elementos enquanto a pagina carrega.
+Botões que se movem podem fazer o usuário clicar no lugar errado, texto que se move pode dificultar a leitura.
+
+ATIVIDADE 3
+

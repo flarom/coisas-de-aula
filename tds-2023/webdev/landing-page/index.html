@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="header-style.css">
+</head>
+
+<body>
+    <header class="header">
+        <a href="#default" class="logo">Flarom</a>
+        <nav id="menu" class="header-right">
+            <a href="#home">Home</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+        </nav>
+        <button onclick="toggleMenu()" class="header-menu-button">
+            <span class="large-icon">menu</span>
+        </button>
+    </header>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById("menu");
+            menu.classList.toggle("active");
+        }
+    </script>
+
+    <div class="document fill row-container">
+        <div>
+            <h1>Transforme sua presença online</h1>
+            <p>Crie sites incríveis, responsivos e que encantam! Com nossa plataforma intuitiva, qualquer pessoa pode
+                construir uma página profissional sem complicação.</p>
+            <ul style="list-style-type: '✓ ';">
+                <li>Templates modernos e personalizáveis</li>
+                <li>Suporte 24/7 (com muito carinho!)</li>
+                <li>Hospedagem super rápida e segura</li>
+            </ul>
+            <br>
+            <button class="awesome">Comece de graça agora!</button>
+        </div>
+        <div>
+            <img src="https://picsum.photos/300/200?blur=2" alt="" loading="lazy">
+        </div>
+    </div>
+</body>
+
+</html>
