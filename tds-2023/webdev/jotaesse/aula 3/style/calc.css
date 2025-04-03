@@ -1,0 +1,118 @@
+@font-face {
+    font-family: 'SevenSegment';
+    src: url('Seven Segment.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --display-fg: #222222;
+    --display-bg: #c8ffb0;
+    --display-shadow: #a4d98c;
+
+    --calculator-bg: #f3f3f3;
+    --calculator-shadow: #b3b3b3;
+
+    --operator-fg: #ffffff;
+    --operator-bg: #ff9800;
+    --operator-shadow: #e68900;
+
+    --equal-fg: #ffffff;
+    --equal-bg: #388e3c;
+    --equal-shadow: #2e7031;
+
+    --num-fg: #ffffff;
+    --num-bg: #4f4f4f;
+    --num-shadow: #3a3a3a;
+
+    --ac-fg: #ffffff;
+    --ac-bg: #d32f2f;
+    --ac-shadow: #b71c1c;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    background: #f3f3f3;
+    border-bottom: 10px solid var(--calculator-shadow);
+    border-radius: 15px;
+    width: max-content;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.display {
+    width: 100%;
+    height: 80px;
+    font-size: 2em;
+    text-align: right;
+    padding: 10px;
+    font-family: 'SevenSegment', sans-serif;
+    border-top: 5px solid var(--display-shadow);
+    color: var(--display-fg);
+    background: var(--display-bg);
+    text-shadow: 0px 2px var(--display-shadow);
+    border-radius: 10px;
+}
+
+.keypad {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
+
+.keypad button {
+    width: 64px;
+    height: 64px;
+    font-size: large;
+    border: none;
+    border-radius: 10px;
+    border-bottom: 5px solid var(--num-shadow);
+    color: var(--num-fg);
+    background: var(--num-bg);
+    cursor: pointer;
+
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.keypad button:hover {
+    transform: translateY(-5px);
+}
+
+.keypad button:active {
+    transform:translateY(5px);
+}
+
+.keypad .bigx {
+    grid-column: span 2;
+    width: 100%;
+}
+
+.keypad .key--equal {
+    background: var(--equal-bg);
+    color: var(--equal-fg);
+    border-color: var(--equal-shadow);
+}
+
+.keypad .key--ac {
+    background-color: var(--ac-bg);
+    color: var(--ac-fg);
+    border-color: var(--ac-shadow);
+}
+
+.keypad .key--operator {
+    background-color: var(--operator-bg);
+    color: var(--operator-fg);
+    border-color: var(--operator-shadow);
+}

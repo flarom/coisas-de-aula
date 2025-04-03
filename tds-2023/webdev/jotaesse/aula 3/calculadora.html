@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style/calc.css">
+</head>
+
+<body>
+    <div class="calculator">
+        <div class="display" id="display">0</div>
+        <div class="keypad">
+            <button>7</button> <button>8</button> <button>9</button> 
+            <button class="key--operator" data-action="divide">÷</button> 
+    
+            <button>4</button> <button>5</button> <button>6</button> 
+            <button class="key--operator" data-action="multiply">&times;</button> 
+    
+            <button>1</button> <button>2</button> <button>3</button> 
+            <button class="key--operator" data-action="subtract">-</button>
+    
+            <button class="bigx">0</button> <button data-action="decimal">.</button>
+            <button class="key--operator" data-action="add">+</button>
+    
+            <button data-action="clear" class="key--ac bigx">AC</button>
+            <button class="key--equal bigx" data-action="calculate">=</button>
+        </div>
+    </div>
+
+    <script>
+        const display = document.getElementById("display");
+        let currentInput = "";
+        let operator = "";
+        let previousInput = "";
+
+        document.querySelector(".keypad").addEventListener("click", function (event) {
+            if (!event.target.matches("button")) return;
+
+            const key = event.target;
+            const action = key.dataset.action;
+            const keyValue = key.textContent;
+
+            if (!action) {
+                if (display.textContent === "0" || currentInput === "") {
+                    currentInput = keyValue;
+                } else {
+                    currentInput += keyValue;
+                }
+                display.textContent = currentInput;
+            }
+
+            if (action === "decimal") {
+                if (!currentInput.includes(".")) {
+                    currentInput += ".";
+                    display.textContent = currentInput;
+                }
+            }
+
+            if (action === "clear") {
+                currentInput = "";
+                previousInput = "";
+                operator = "";
+                display.textContent = "0";
+            }
+
+            if (["add", "subtract", "multiply", "divide"].includes(action)) {
+                previousInput = currentInput;
+                operator = action;
+                currentInput = "";
+            }
+
+            if (action === "calculate") {
+                if (previousInput && currentInput) {
+                    let result;
+                    const prev = parseFloat(previousInput);
+                    const curr = parseFloat(currentInput);
+
+                    switch (operator) {
+                        case "add": result = prev + curr; break;
+                        case "subtract": result = prev - curr; break;
+                        case "multiply": result = prev * curr; break;
+                        case "divide": result = prev / curr; break;
+                    }
+
+                    display.textContent = result;
+                    currentInput = result.toString();
+                    previousInput = "";
+                    operator = "";
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>
